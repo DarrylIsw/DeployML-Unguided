@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 
 
-def load_tflite_model(model_path="melanoma_model.tflite"):
+def load_tflite_model(model_path="model.tflite"):
     interpreter = tf.lite.Interpreter(model_path=model_path)
     interpreter.allocate_tensors()
     return interpreter
