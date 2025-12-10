@@ -67,7 +67,7 @@ if uploaded_file:
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     # Load TFLite model
-    interpreter = load_tflite_model("melanoma_model.tflite")
+    interpreter = load_tflite_model("model.tflite")
 
     # Predict button
     if st.button("Predict"):
